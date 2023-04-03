@@ -1,3 +1,3 @@
-export function objectToArray(obj = {}) {
+export function objectToArrayOfValues(obj = {}) {
   return Object.values(obj);
 }
