@@ -10,6 +10,6 @@ export function unselectUser(userId) {
   return { type: USER_UNSELECTED, payload: { userId } };
 }
 
-export function loadUsers(users = []) {
+export function loadUsers(users) {
   return { type: USERS_LOADED, payload: { users } };
 }

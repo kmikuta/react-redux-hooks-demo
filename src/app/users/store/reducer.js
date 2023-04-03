@@ -11,8 +11,8 @@ export function usersReducer(state = initialState, action) {
     case USERS_LOADED:
       return {
         ...state,
-        items: arrayToObjectLiteral(action.payload.users),
-        selectedUsers: [],
+        items: arrayToObjectLiteral(action.payload.users.items),
+        selectedUserIds: action.payload.users.selectedIds,
       };
 
     case USER_SELECTED:
