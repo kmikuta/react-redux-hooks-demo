@@ -21,7 +21,11 @@ body {
 }
 
 .color_secondary {
-  color: #aaa;
+  color: #aca9a9;
+}
+
+.color_error {
+  color: #f63737
 }
 
 .width_128 {
