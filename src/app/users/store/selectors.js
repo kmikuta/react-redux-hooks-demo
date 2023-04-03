@@ -1,4 +1,4 @@
-import { objectToArray } from "../../util/objects";
+import { objectToArrayOfValues } from "../../util/objects";
 
 const sortByName = (a, b) => (a.name === b.name ? 0 : a.name > b.name ? 1 : -1);
 
@@ -9,7 +9,7 @@ export function usersAndSelectedUsersSelector({ users }) {
     .map((id) => users.items[id])
     .sort(sortByName);
 
-  const filteredUsers = objectToArray(users.items).filter(
+  const filteredUsers = objectToArrayOfValues(users.items).filter(
     (user) => !selectedIds.has(user.id)
   );
 
