@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+.margin-bottom_16 {
+  margin-bottom: 16px;
+}
+
 .padding-left_16 {
   padding-left: 16px;
 }
@@ -24,8 +28,8 @@ body {
   width: 128px;
 }
 
-.height_128 {
-  width: 120px;
+.height_200 {
+  height: 200px;
 }
 
 .display_flex {
